@@ -7,6 +7,7 @@ int main()
     bool prime[1000];
     std::fill_n(prime, 1000, true);
     int index = 0;
+    int count = 0;
     while(index<999){
         if (index == 0 || index == 1){
             prime[index] = false;
@@ -22,8 +23,10 @@ int main()
     while(index<999){
         if(prime[index] == true){
             cout << index << "\n";
+            count++;
         }
         index++;
     }
+    cout << "Total number of prime numbers: " << count;
     
 }
