@@ -9,7 +9,7 @@ int main()
     int index = 0;
     int count = 0;
     while(index<999){
-        if (index == 0 || index == 1){
+        if (index<3){
             prime[index] = false;
         }
           for (int i = 2; i <= index / 2; ++i) {
@@ -22,7 +22,7 @@ int main()
     index = 0;
     while(index<999){
         if(prime[index] == true){
-            cout << index << "\n";
+            cout << index << ", ";
             count++;
         }
         index++;
